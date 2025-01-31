@@ -22,14 +22,14 @@
             </nav>
         </header>
         <main>
-            <form action="/submit" method="post">
+            <form action="/submit" method="post" role="contact form">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" aria-label="name input" required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" aria-label="email input" required>
                 <label for="message">Message:</label>
-                <input type="textbox" id="message" name="message" required>
-                <button type="submit">Submit</button>
+                <input type="textbox" id="message" name="message" aria-label="message input" required>
+                <button type="submit" aria-label="submit button">Submit</button>
             </form>
         </main>
         <footer>
