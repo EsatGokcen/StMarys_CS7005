@@ -5,9 +5,178 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #ffcc79;
+/* +++++++++++++++++++ MAIN CONTENT STYLING +++++++++++++++++++++ */
+
+main {
+    background-color: #ffcc79; /* Background color */
+    color: #333; /* Dark text for readability */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for Sections & Articles */
+.main-section, article, .main-div {
+    background: white;
+    padding: 25px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+/* Headings */
+h2 {
+    font-size: 24px;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 3px solid #ffcc79;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Links */
+a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ffcc79;
+    text-decoration: underline;
+}
+
+/* Movie Trailer */
+iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Figure (Images & Videos) */
+figure {
     text-align: center;
+    margin: 20px auto;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Movie List */
+ol {
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+ol li {
+    margin: 8px 0;
+}
+
+/* Movie Image */
+img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    section, article {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    iframe {
+        height: 250px;
+    }
+}
+
+/* +++++++++++++++++++ MY 5 FAVOURITE FILMS STYLING +++++++++++++++++++++ */
+
+.favourite-films {
+    background-color: white;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Title Styling */
+.favourite-films h2 {
+    font-size: 26px;
+    color: #333;
+    text-transform: uppercase;
+    background-color: #ffcc79;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* List Styling */
+.favourite-films ol {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.favourite-films ol li {
+    background-color: #ffcc79;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 600px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.favourite-films ol li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.favourite-films ol li:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.favourite-films ol li a:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 /* +++++++++++++++++++HEADER STYLING+++++++++++++++++++++ */
