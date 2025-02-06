@@ -25,7 +25,7 @@ main {
 }
 
 /* Headings */
-h2 {
+h1, h2 {
     font-size: 24px;
     color: #333;
     text-transform: uppercase;
@@ -177,6 +177,29 @@ img {
 .favourite-films ol li a:hover {
     color: white;
     text-decoration: underline;
+}
+
+.about-list {
+    background-color: #fff8c4; /* Softer yellow */
+    border-left: 5px solid #ffcc00; /* Subtle accent border */
+    padding: 10px 15px;
+    list-style-type: none; /* Remove default bullets */
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Make the list horizontal */
+    gap: 15px; /* Space between items */
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.about-list li {
+    background-color: white; /* Separate each item visually */
+    padding: 8px 12px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid #ffcc00; /* Light border */
+    white-space: nowrap; /* Prevents text from breaking */
 }
 
 /* +++++++++++++++++++HEADER STYLING+++++++++++++++++++++ */
