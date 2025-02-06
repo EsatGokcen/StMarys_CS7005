@@ -137,12 +137,13 @@ p.FooterP a:hover {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px;
     transition: color 0.3s ease-in-out;
+    border-bottom: 2px solid transparent; /* Subtle underline effect */
 }
 
 .footer-links a:hover {
     color: #ffcc79; /* Hover color */
+    border-bottom: 2px solid #ffcc79;
 }
 
 /* Fix Social Media Icons */
