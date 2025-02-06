@@ -87,9 +87,85 @@ nav ul li a.active {
     }
 }
 
-/* +++++++++++++++++++FOOTER STYLING+++++++++++++++++++++ */
+/* +++++++++++++++++++ FOOTER STYLING +++++++++++++++++++++ */
 
 footer {
-    background-color: #ec9200;
-    padding: 10px;
+    background-color: #333; /* Dark background to match the header */
+    color: white;
+    padding: 25px 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
+
+/* Footer Title */
+h3.FooterTitle {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* Footer Paragraph */
+p.FooterP {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 10px;
+}
+
+/* Footer Links */
+.footer-links {
+    margin: 15px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #ffcc79; /* Hover color */
+}
+
+/* Social Media Icons */
+.footer-social {
+    margin: 15px 0;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-social a img {
+    width: 32px; /* Adjusted icon size */
+    height: auto;
+    filter: brightness(0) invert(1); /* Makes icons white */
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.footer-social a:hover img {
+    filter: brightness(1); /* Restores original color on hover */
+    transform: scale(1.2);
+}
+
+/* Responsive Footer */
+@media (max-width: 600px) {
+    footer {
+        padding: 20px 5px;
+    }
+
+    h3.FooterTitle {
+        font-size: 18px;
+    }
+
+    p.FooterP {
+        font-size: 14px;
+    }
+}
+
