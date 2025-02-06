@@ -202,6 +202,38 @@ img {
     white-space: nowrap; /* Prevents text from breaking */
 }
 
+/* +++++++++++++++++++TABLE STYLING+++++++++++++++++++++ */
+.movie-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.movie-table thead {
+    background-color: #ffcc00;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.movie-table th, .movie-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.movie-table tbody tr:nth-child(odd) {
+    background-color: #fff8c4; /* Soft yellow for alternating rows */
+}
+
+.movie-table tbody tr:hover {
+    background-color: #ffeb99; /* Slight highlight on hover */
+    transition: 0.3s;
+}
+
 /* +++++++++++++++++++HEADER STYLING+++++++++++++++++++++ */
 /* Header Styles */
 header {
