@@ -90,7 +90,7 @@ nav ul li a.active {
 /* +++++++++++++++++++ FOOTER STYLING +++++++++++++++++++++ */
 
 footer {
-    background-color: #333; /* Dark background to match the header */
+    background-color: #333; /* Dark background */
     color: white;
     padding: 25px 10px;
     text-align: center;
@@ -114,6 +114,20 @@ p.FooterP {
     margin: 0 auto 10px;
 }
 
+/* Fix "Contact Us" Link */
+p.FooterP a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent; /* Subtle underline effect */
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+p.FooterP a:hover {
+    color: #ffcc79; /* Hover color */
+    border-bottom: 2px solid #ffcc79;
+}
+
 /* Footer Links */
 .footer-links {
     margin: 15px 0;
@@ -131,7 +145,7 @@ p.FooterP {
     color: #ffcc79; /* Hover color */
 }
 
-/* Social Media Icons */
+/* Fix Social Media Icons */
 .footer-social {
     margin: 15px 0;
 }
@@ -145,12 +159,11 @@ p.FooterP {
 .footer-social a img {
     width: 32px; /* Adjusted icon size */
     height: auto;
-    filter: brightness(0) invert(1); /* Makes icons white */
-    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+    filter: none; /* Fix issue of disappearing icons */
+    transition: transform 0.3s ease-in-out;
 }
 
 .footer-social a:hover img {
-    filter: brightness(1); /* Restores original color on hover */
     transform: scale(1.2);
 }
 
