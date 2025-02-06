@@ -235,10 +235,26 @@ img {
 }
 
 /* +++++++++++++++++++HEADER STYLING+++++++++++++++++++++ */
+
 /* Header Styles */
 header {
     background-color: #333;
     padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Site Title */
+.site-title {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navigation Styles */
@@ -287,6 +303,14 @@ nav ul li a.active {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-title {
+        margin-bottom: 10px;
+    }
     nav ul {
         display: none;
         flex-direction: column;
