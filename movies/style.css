@@ -10,10 +10,6 @@ body {
     text-align: center;
 }
 
-footer {
-    background-color: #ec9200;
-    padding: 10px;
-}
 /* +++++++++++++++++++HEADER STYLING+++++++++++++++++++++ */
 /* Header Styles */
 header {
@@ -89,4 +85,11 @@ nav ul li a.active {
     nav ul li {
         padding: 10px;
     }
+}
+
+/* +++++++++++++++++++FOOTER STYLING+++++++++++++++++++++ */
+
+footer {
+    background-color: #ec9200;
+    padding: 10px;
 }
