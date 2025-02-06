@@ -3,12 +3,90 @@ body {
     text-align: center;
 }
 
-header {
-    background-color: #ec9200;
-    padding: 15px;
-}
-
 footer {
     background-color: #ec9200;
     padding: 10px;
+}
+/* +++++++++++++++++++HEADER STYLING+++++++++++++++++++++ */
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    padding: 15px 20px;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation List */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Navigation Links */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    background-color: #ec9200;
+    color: black;
+}
+
+/* Active Link */
+nav ul li a.active {
+    background-color: #ec9200;
+    color: white;
+}
+
+/* Responsive Navigation */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul li {
+        padding: 10px;
+    }
 }
