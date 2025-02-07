@@ -23,17 +23,17 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <form action="/submit" method="post" role="contact form">
+        <main class="contact-container">
+            <form action="/submit" method="post" class="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" aria-label="name input" required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" aria-label="email input" required>
                 <label for="message">Message:</label>
-                <input type="textbox" id="message" name="message" aria-label="message input" required>
+                <textarea id="message" name="message" aria-label="message input" required></textarea>
                 <button type="submit" aria-label="submit button">Submit</button>
             </form>
-        </main>
+        </main>        
         <footer>
             <div class="footer-links">
                 <a href="privacy.html">Privacy Policy</a> |
