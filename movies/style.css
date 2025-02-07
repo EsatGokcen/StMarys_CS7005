@@ -431,3 +431,75 @@ p.FooterP a:hover {
     }
 }
 
+/* ============ CONTACT FORM STYLES ============ */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffcc79; /* Dark grey background */
+    padding: 20px;
+}
+
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ffcc79;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fffaf0;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #e6a700;
+    outline: none;
+    background-color: #fff3d6;
+}
+
+.contact-form button {
+    background-color: #ffcc79;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #e6a700;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    .contact-form {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
