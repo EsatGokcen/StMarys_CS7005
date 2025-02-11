@@ -604,3 +604,28 @@ p.FooterP a:hover {
     }
 }
 
+/* =================== PRIVACY SECTION =================== */
+
+/* Style for the unordered list */
+.privacy-list {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+/* Style for each list item */
+.privacy-list li {
+    padding: 8px 0;
+    font-size: 1.1rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+/* Adding a custom bullet icon (optional) */
+.privacy-list li::before {
+    content: "+"; /* You can replace with another emoji or icon */
+    color: #ec9200; /* Matches theme */
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
