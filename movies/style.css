@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+body {
+    cursor: url('images/shrek_cursor.png') 16 16, auto;
+}
+
+a {
+    cursor: url('images/shrek_click.png') 16 16, pointer;
+}
+
+button {
+    cursor: url('images/shrekbutton.png') 16 16, pointer;
+}
 /* +++++++++++++++++++ MAIN CONTENT STYLING +++++++++++++++++++++ */
 
 main {
