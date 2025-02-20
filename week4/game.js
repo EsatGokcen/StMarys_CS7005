@@ -1,1 +1,3 @@
 // game script goes here
+
+// use canvas to draw the game ...
