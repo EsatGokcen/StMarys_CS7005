@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Simple Questionare</title>
-    <script src="bmi.js"></script>
+    <title>Simple Questionnaire</title>
+    <script src="bmi.js" defer></script>
 </head>
 <body>
     <h1>Questions</h1>
@@ -11,13 +11,19 @@
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         <br>
+        
         <label for="weight">Weight (kg):</label>
         <input type="number" id="weight" name="weight" required>
         <br>
+
         <label for="height">Height (cm):</label>
         <input type="number" id="height" name="height" required>
         <br>
+
         <button type="submit">Calculate</button>
     </form>
+
+    <!-- Result will be displayed here -->
+    <h2 id="result"></h2>
 </body>
 </html>
