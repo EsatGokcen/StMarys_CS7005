@@ -61,3 +61,13 @@ console.log(circle.displayInfo());
 let square = new Square(7);
 console.log(square.displayInfo());
 
+// Using the __proto__ property to check the prototype chain;
+
+console.log(rectangle.__proto__ === Rectangle.prototype);
+console.log(rectangle.__proto__.__proto__ === Shape.prototype);
+console.log(rectangle.__proto__.__proto__.__proto__ === Object.prototype);
+
+console.log(circle.__proto__ === Circle.prototype);
+
+console.log(square.__proto__ === Square.prototype);
+
