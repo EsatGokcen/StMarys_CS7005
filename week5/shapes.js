@@ -53,13 +53,13 @@ Square.prototype.area = function () {
 // Testing shapes inheritance with objects and displayInfo method
 
 let rectangle = new Rectangle(5, 8);
-console.log(rectangle.displayInfo());
+rectangle.displayInfo();
 
 let circle = new Circle(4);
-console.log(circle.displayInfo());
+circle.displayInfo();
 
 let square = new Square(7);
-console.log(square.displayInfo());
+square.displayInfo();
 
 // Using the __proto__ property to check the prototype chain;
 
