@@ -1,1 +1,13 @@
-/* game styling goes here */
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+canvas {
+    display: block;
+    background-color: white;
+}
