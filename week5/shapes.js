@@ -3,6 +3,11 @@ function Shape (name) {
 }
 
 Shape.prototype.area = function () {};
+Shape.prototype.displayInfo = function () {
+    console.log('The area of the ' + this.name + ' is ' + this.area());
+}
+
+// Rectangle prototype
 
 function Rectangle (width, height) {
     Shape.call(this, 'rectangle');
@@ -17,6 +22,8 @@ Rectangle.prototype.area = function () {
     return this.width * this.height;
 }
 
+// Circle prototype
+
 function Circle (radius) {
     Shape.call(this, 'circle');
     this.radius = radius;
@@ -29,6 +36,8 @@ Circle.prototype.area = function () {
     return Math.PI * Math.pow(this.radius, 2);
 }
 
+// Square prototype 
+
 function Square (side) {
     Shape.call(this, 'square');
     this.side = side;
@@ -40,3 +49,15 @@ Square.prototype.constructor = Square;
 Square.prototype.area = function () {
     return Math.pow(this.side, 2);
 }
+
+// Testing shapes inheritance with objects and displayInfo method
+
+let rectangle = new Rectangle(5, 8);
+console.log(rectangle.displayInfo());
+
+let circle = new Circle(4);
+console.log(circle.displayInfo());
+
+let square = new Square(7);
+console.log(square.displayInfo());
+
