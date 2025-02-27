@@ -1,4 +1,4 @@
-function createAdvancedCounter (value) {
+function createAdvancedCounter () {
     let count = 0;
     return {
         increment: function () {
@@ -18,3 +18,20 @@ function createAdvancedCounter (value) {
         }
     }
 }
+
+let testCounter = createAdvancedCounter();
+testCounter.increment();
+testCounter.getCount();
+console.log(testCounter.getCount());
+
+testCounter.decrement();
+testCounter.getCount();
+console.log(testCounter.getCount());
+
+testCounter.set(5);
+testCounter.getCount();
+console.log(testCounter.getCount());
+
+testCounter.reset();
+testCounter.getCount(); 
+console.log(testCounter.getCount());
