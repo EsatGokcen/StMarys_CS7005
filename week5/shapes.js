@@ -33,3 +33,10 @@ function Square (side) {
     Shape.call(this, 'square');
     this.side = side;
 }
+
+Square.prototype = Object.create(Shape.prototype);
+Square.prototype.constructor = Square;
+
+Square.prototype.area = function () {
+    return Math.pow(this.side, 2);
+}
