@@ -28,3 +28,7 @@ async function getWeather(city) {
         console.log(error);
     }
 }
+ 
+function displayWeather(weatherData) {
+    console.log(`The weather in ${city} is ${weatherData.temperature}°C and ${weatherData.condition}.`);
+}
