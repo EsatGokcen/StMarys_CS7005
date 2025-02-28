@@ -23,17 +23,15 @@ async function getWeather(city) {
                 }
                 });
            });
-        console.log(data);
+        function displayWeather(weatherData) {
+            console.log(`The weather in ${city} is ${weatherData.temperature}°C and ${weatherData.condition}.`);
+        }
+        displayWeather(data);
+        return data;
     } catch (error) {
         console.log(error);
     }
 }
- 
-function displayWeather(weatherData) {
-    console.log(`The weather in ${city} is ${weatherData.temperature}°C and ${weatherData.condition}.`);
-}
 
 getWeather('London');
 getWeather('Paris');
-
-displayWeather(getWeather('London'));
