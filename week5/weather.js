@@ -11,3 +11,20 @@ is {temperature}°C and {condition}..
 - Test your implementation and verify it functions as expected.
 - Commit and push the changes to your GitHub repository.
 */
+
+async function getWeather(city) {
+    try {
+        let data = await new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if (city === 'London') {
+                    resolve({ temperature: 20, condition: 'Sunny' });
+                } else {
+                    reject('City not found');
+                }
+                }
+           });
+        console.log(data);
+    } catch (error) {
+        console.log(error);
+    }
+}
