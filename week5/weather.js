@@ -21,7 +21,7 @@ async function getWeather(city) {
                 } else {
                     reject('City not found');
                 }
-                }
+                });
            });
         console.log(data);
     } catch (error) {
@@ -32,3 +32,8 @@ async function getWeather(city) {
 function displayWeather(weatherData) {
     console.log(`The weather in ${city} is ${weatherData.temperature}°C and ${weatherData.condition}.`);
 }
+
+getWeather('London');
+getWeather('Paris');
+
+displayWeather(getWeather('London'));
