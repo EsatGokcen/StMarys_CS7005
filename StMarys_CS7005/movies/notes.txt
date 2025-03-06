@@ -1,0 +1,3 @@
+# Notes for the Movies Lecture Project
+
+Lecture1 = left at challenge8 of the first html book...
