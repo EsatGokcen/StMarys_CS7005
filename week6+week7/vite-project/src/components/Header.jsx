@@ -4,9 +4,10 @@ function Header() {
     return (
         <>
             <h1 class="site-title">
-                <Link to="/" className="active">My Website</Link>
+                <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
+                    My Website
+                </NavLink>
             </h1>
-
             <nav role="Navigation">
             <ul id="nav-list">
                 <li>
