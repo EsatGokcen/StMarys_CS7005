@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Footer() {
     return (
         <small>
@@ -5,12 +7,12 @@ function Footer() {
             
             <p class="FooterP">
                 If you would like to contact us, visit our 
-                <a href="contact.html" class="footer-link">Contact Us</a> page.
+                <Link to="/contact">Contact Us</Link> page.
             </p>
         
             <div class="footer-links">
-                <a href="privacy.html">Privacy Policy</a> |
-                <a href="terms.html">Terms of Service</a>
+                <Link to="/privacy">Privacy Policy</Link>
+                <Link to="/terms">Terms of Service</Link>
             </div>
         
             <div class="footer-social">

@@ -4,8 +4,8 @@ function Header() {
     return (
         <>
             <h1 class="site-title">
-                <a href="index.html">My Website</a>
-            </h1>  
+                <Link to="/" className="active">My Website</Link>
+            </h1>
             <nav role="Navigation">
                 <ul id="nav-list">
                     <li><Link to="/" className="active">Home</Link></li>
