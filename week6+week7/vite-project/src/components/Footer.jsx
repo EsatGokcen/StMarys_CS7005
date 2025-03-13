@@ -15,13 +15,13 @@ function Footer() {
         
             <div class="footer-social">
                 <a href="https://facebook.com" target="_blank">
-                    <img src="assets/facebook_icon.png" alt="Facebook"/>
+                    <img src="../../src/assets/facebook_icon.png" alt="Facebook"/>
                 </a>
                 <a href="https://twitter.com" target="_blank">
-                    <img src="assets/twitter_icon.png" alt="Twitter"/>
+                    <img src="../../src/assets/twitter_icon.png" alt="Twitter"/>
                 </a>
                 <a href="https://instagram.com" target="_blank">
-                    <img src="assets/instagram_icon.png" alt="Instagram"/>
+                    <img src="../../src/assets/instagram_icon.png" alt="Instagram" />
                 </a>
             </div>
         

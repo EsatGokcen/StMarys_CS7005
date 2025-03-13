@@ -6,10 +6,10 @@ function Header() {
             </h1>  
             <nav role="Navigation">
                 <ul id="nav-list">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="gallery.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="../src/Home.jsx" class="active">Home</a></li>
+                    <li><a href="../src/About.jsx">About</a></li>
+                    <li><a href="../src/Services.jsx">Services</a></li>
+                    <li><a href="../src/Contact.jsx">Contact</a></li>
                 </ul>
             </nav>
         </>
