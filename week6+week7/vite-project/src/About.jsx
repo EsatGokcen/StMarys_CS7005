@@ -3,10 +3,10 @@ import Footer from "./components/Footer";
 
 function About() {
     return (
-        <>
+        <div className='page'>
             <Header />
             <Footer />
-        </>
+        </div>
     )
 }
 

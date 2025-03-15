@@ -3,7 +3,7 @@ import Footer from './components/Footer'
 
 function Home() {
     return (
-        <div>
+        <div className='page'>
             <Header />
             <Footer />
         </div>
