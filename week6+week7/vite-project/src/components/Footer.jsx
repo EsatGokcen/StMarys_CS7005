@@ -5,7 +5,8 @@ import instagramIcon from '../assets/instagram_icon.png'
 
 function Footer() {
     return (
-        <small>
+        <footer>
+            <small className='container'>
             <h3 class="FooterTitle">Contact Us</h3>
             
             <p class="FooterP">
@@ -32,6 +33,7 @@ function Footer() {
         
             <p class="FooterP">&copy; 2025 My React Website</p>
         </small>
+        </footer>
     )
 }
 
