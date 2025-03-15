@@ -73,13 +73,3 @@ nav ul li a:hover {
   line-height: 1.6;
 }
 
-/* 🔹 FOOTER */
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
