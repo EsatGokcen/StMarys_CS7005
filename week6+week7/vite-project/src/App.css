@@ -19,44 +19,6 @@ body {
   padding: 20px;
 }
 
-/* 🔹 NAVIGATION STYLES */
-nav {
-  background: #333;
-  padding: 15px 0;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px 15px;
-  transition: 0.3s ease;
-}
-
-nav ul li a:hover {
-  background-color: #555;
-  border-radius: 5px;
-}
-
-/* 🔹 ACTIVE NAV LINK */
-.active {
-  background-color: #007BFF;
-  border-radius: 5px;
-  padding: 10px 15px;
-}
-
 /* 🔹 MAIN PAGE STYLES */
 .page {
   text-align: center;
