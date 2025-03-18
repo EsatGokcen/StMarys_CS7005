@@ -4,6 +4,8 @@ import Home from './Home'
 import About from './About'
 import Services from './Services'
 import Contact from './Contact'
+import Privacy from './Privacy'
+import Terms from './Terms'
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Services />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path='/privacy' element={<Privacy />} />
+      <Route path='/terms' element={<Terms />} />
     </Routes>
   </BrowserRouter>
   )
