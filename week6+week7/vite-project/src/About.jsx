@@ -27,9 +27,9 @@ function About() {
                         className="about-image"
                     />
                 </section>
+                <ToggleVisibility />
             </main>
 
-            <ToggleVisibility />
             <Footer />
         </div>
     );
