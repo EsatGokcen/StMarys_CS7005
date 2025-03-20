@@ -1,5 +1,5 @@
-function toggleVisibility() {
-    const [isVisible, setIsVisible] = useState(true);
+function ToggleVisibility() {
+    const [isVisible, setIsVisible] = useState(false);
     const toggle = () => setIsVisible(!isVisible);
 
     return (
@@ -10,4 +10,4 @@ function toggleVisibility() {
     );
 }
 
-export default toggleVisibility;
+export default ToggleVisibility;

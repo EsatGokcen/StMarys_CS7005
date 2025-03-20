@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ToggleVisibility from "./components/ToggleVisibility";
 
 function About() {
     return (
@@ -28,6 +29,7 @@ function About() {
                 </section>
             </main>
 
+            <ToggleVisibility />
             <Footer />
         </div>
     );
