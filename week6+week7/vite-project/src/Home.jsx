@@ -1,11 +1,12 @@
 import Header from './components/Header'
 import Footer from './components/Footer'
+import React from 'react'
 
 function Home() {
     const [count, setCount] = React.useState(0)
     const increment = () => setCount(count + 1)
     const decrement = () => setCount(count -1)
-    
+
     return (
         <div className='page'>
             <Header />
@@ -21,10 +22,10 @@ function Home() {
                     </p>
                     <button className="cta-button">Learn More</button>
                 </section>
-                <section className="hero">
+                <section className="home-counter">
                     <p>{count}</p>
-                    <button onClick={increment}>Increment</button>
-                    <button onClick={decrement}>Decrement</button>
+                    <button className="counter-button" onClick={increment}>Increment</button>
+                    <button className="counter-button" onClick={decrement}>Decrement</button>
                 </section>
             </main>
 
